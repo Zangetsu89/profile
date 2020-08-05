@@ -7,55 +7,68 @@ body {
   text-align: center;
   margin: auto ;
 }
+.container {
+  width: 900px;
+  margin: 40px auto;
+  padding: 40px;
+  border-radius: 30px;
+  background-color: #575F7D;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 50%) 0% 0% / cover, url(./images/books.jpeg);
+}
+
 .header {
-  background-color: #F2E2BA;
+  background-color:antiquewhite;
   padding: 40px;
   box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
   border-radius: 50px;
   margin: 20px auto;
   text-align: center;
-  width: 600px;
+  width: 80%;
+  opacity: 0.8;
 }
 .header p {
   padding: 20px;
+  font-weight: bold;
 }
 .header a {
- color: black;
- text-decoration: none;
- border: solid 2px rgb(230, 230, 230);
- background-color: rgb(230, 230, 230);
- border-width: 10px;
- border-radius: 20px;
- padding: 10px;
+  color: antiquewhite;
+  font-weight: bold;
+  text-decoration: none;
+  border: solid 2px #575F7D;
+  background-color: #575F7D;
+  border-width: 10px;
+  border-radius: 20px;
+  padding: 10px;
 }
 .header a:hover {
- opacity: 0.4;
+  opacity: 0.4;
 }
 .header img {
   border-radius: 150px;
 }
 h2 {
- color: #575F7D;
+  color: #575F7D;
 }
 
 ul {
- display: block;
- list-style-type: disc;
- margin-block-start: 1em;
- margin-block-end: 1em;
- margin-inline-start: 0px;
- margin-inline-end: 0px;
- padding: 0px;
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding: 0px;
 }
 
 .footer{
-  background-color: #F2E2BA;
+  background-color: antiquewhite;
   padding: 40px;
   box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
   border-radius: 50px;
   margin: 20px auto;
   text-align: center;
-  width: 600px;
+  width: 80%;
+  opacity: 0.8;
 }
 .footer ul li i {
   font-size: 40px;
@@ -69,4 +82,13 @@ ul {
 
 i:hover {
   opacity: 0.5;
+}
+.container {overflow: auto;}
+@media (max-width: 700px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 300px;
+    background-color:#817F82;
+
+  }
 }
